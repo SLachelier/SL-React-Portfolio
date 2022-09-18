@@ -1,0 +1,85 @@
+$color_gumbo_60_approx: rgba(126, 162, 170, 0.6);
+$color_teal_blue_approx: #08415c;
+$color_lavender_blush_approx: #ffeaee;
+$color_gumbo_approx: #7ea2aa;
+
+// n is number of stars required
+@function multiple-box-shadow ($n) {
+  $value: '#{random(2000)}px #{random(2000)}px #FFF';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+	}
+  @return unquote($value)
+}
+
+$shadows-small:  multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big:    multiple-box-shadow(100);
+
+html {
+	color: transparent;
+	height: 100%;
+	overflow: hidden;
+	background: radial-gradient(ellipse at bottom, #7ea2aa 0%, #08415c 100%);
+}
+
+@keyframes animStar {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(-2000px);
+	}
+}
+
+#stars {
+  width: 1px;
+  height: 1px;
+	filter: blur(0.04rem);
+  background: transparent;
+  box-shadow: $shadows-small;
+  animation			: animStar 50s linear infinite;
+    
+  &:after {
+    content: " ";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
+	}
+}
+#stars2 {
+  width: 2px;
+  height: 2px;
+	filter: blur(0.04rem);
+  background: transparent;
+  box-shadow: $shadows-medium;
+  animation: animStar 100s linear infinite;
+    
+  &:after {
+    content: " ";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+	}
+}
+#stars3 {
+  width: 3px;
+  height: 3px;
+	filter: blur(0.04rem);
+  background: transparent;
+  box-shadow: $shadows-big;
+  animation: animStar 150s linear infinite;
+    
+  &:after {
+    content: " ";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: $shadows-big;
+	}
+}

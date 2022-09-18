@@ -1,6 +1,6 @@
 const Background = () => {
   return (
-<div className="bg">
+<div>
       <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
       <section className="wrapper">
           <div id="stars"></div>

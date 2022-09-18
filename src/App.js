@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.scss';
 import React from 'react';
 import Background from './components/Background';
@@ -8,12 +7,12 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <main>
+    <div>
       <Background />
       <Header />
       <Section />
       <Footer />
-    </main>
+    </div>
   );
 }
 
