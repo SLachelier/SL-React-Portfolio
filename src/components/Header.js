@@ -2,8 +2,8 @@ import React from 'react';
 
 const Header = () => {
     return(
-    <header>
-        <div class="header">
+    <div>
+        <div className="header">
             <img src="./assets/images/logo.svg" alt="X" class="logo"/>
         </div>
         <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
@@ -36,7 +36,7 @@ const Header = () => {
                 </li>
             </ul>
         </nav>
-    </header>
+    </div>
 
     );
 };

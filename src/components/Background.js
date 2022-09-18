@@ -1,19 +1,13 @@
 const Background = () => {
   return (
-  <div class="wrapper">
-    <ul class="bg-bubbles">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-	</div>
+<div className="bg">
+      <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
+      <section className="wrapper">
+          <div id="stars"></div>
+          <div id="stars2"></div>
+          <div id="stars3"></div>
+      </section>
+</div>
   );
 };
 
