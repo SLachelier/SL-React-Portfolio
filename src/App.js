@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import React from 'react';
 import Background from './components/Background';
 import Header from './components/Header';
