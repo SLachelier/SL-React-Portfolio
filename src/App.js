@@ -21,7 +21,7 @@ function App() {
           <header>
           <h1>Shauna Lachelier</h1>
               <nav>
-                  <ul class="nav_links">
+                  <ul className="nav_links">
                       <li><Link to="/">About</Link></li>
                       <li><Link to="/projects">Projects</Link></li>
                       <li><Link to="/resume">Resume</Link></li>
