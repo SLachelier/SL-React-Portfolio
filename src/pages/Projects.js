@@ -16,7 +16,7 @@ function Projects() {
           <p>The description for the project goes here</p>
           <div className="btns">
             <button type="button"><a href="https://github.com/SLachelier/nowYouKnow" target="_blank" rel="noReferrer">Repository</a></button>
-            <button type="button">Information</button>
+            <button type="button" >Technologies</button>
           </div>
         </div>
         <div className="card">
@@ -52,7 +52,7 @@ function Projects() {
           <p>The description for the project goes here</p>
           <div className="btns">
           <button type="button"><a href="https://github.com/SLachelier/Text-Editor--SLachelier" target="_blank" rel="noReferrer">Repository</a></button>
-          <button type="button">Information</button>
+          <button type="button" >Information</button>
           </div>
         </div>
         <div className="card">

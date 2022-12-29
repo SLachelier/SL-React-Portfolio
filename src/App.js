@@ -1,12 +1,18 @@
 import './App.scss';
 import React from 'react';
+import { Component } from 'react';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import { Route, Routes, Link } from "react-router-dom";
 
-function App() {
+class App extends Component {
+  state = {clicked: false};
+  handleClick = () => {
+    this.setState({clicked: !this.state.clicked})
+  }
+  render() {
   return (
     <div>
         <div className="background">
@@ -17,21 +23,25 @@ function App() {
               <div id="stars3"></div>
           </section>
         </div>
+        <div className="section">
         <div className="header">
           <header>
           <h1>Shauna Lachelier</h1>
               <nav>
-                  <ul className="nav_links">
+                  <ul id="nav-links" className={this.state.clicked ? ".nav-links active" : ".nav-links"}>
                       <li><Link to="/">About</Link></li>
                       <li><Link to="/projects">Projects</Link></li>
                       <li><Link to="/resume">Resume</Link></li>
                       <li><a href="https://www.linkedin.com/in/slachelier/" target="_blank" rel="noreferrer">LinkedIn</a></li>
                   </ul>
               </nav>
+              <div id="mobile" onClick={this.handleClick}>
+                <i id="bar" className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}> </i>
+              </div>
               <Link className="cta button" to="/contact"><button className='neu button'>Contact</button></Link>
           </header>
       </div>
-      <div className="section">
+
         <section className="glass-main">
               <Routes>
                 <Route path="/" element={<About/>} />
@@ -51,7 +61,8 @@ function App() {
         </aside>
       </div>
     </div>
-  );
+)
+}
 }
 
 export default App;
