@@ -16,6 +16,7 @@ function Resume() {
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, 0%) !important;
+    border-radius: 12px;
   }
   .react-pdf__Page__textContent {
     position: absolute !important;
