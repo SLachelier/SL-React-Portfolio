@@ -17,6 +17,7 @@ class App extends Component {
     <div>
         <div className="background">
           <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
+          <script src="https://kit.fontawesome.com/531472024d.js" crossorigin="anonymous"></script>
           <section className="wrapper">
               <div id="stars"></div>
               <div id="stars2"></div>   

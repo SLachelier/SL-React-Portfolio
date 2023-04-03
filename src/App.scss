@@ -308,15 +308,15 @@ section {
     flex-wrap: wrap;
     width:fit-content;
     height: fit-content;
+    
     .card {
       display: flex;
       flex-wrap: wrap;
       border: solid black;
       border-radius: 12px;
-      margin: 10px;
+      margin: 25px 10px;
       width: 250px;
-      height: 350px;
-      align-content: flex-end;
+      height: 400px;
       justify-content: center;
       border: none;
       outline: none;
@@ -326,12 +326,13 @@ section {
       font-family: "Quicksand", sans-serif;
       color: rgba(255, 255, 255, 0.747);
       font-weight: 500;
+
       img {
         width: 230px;
         height: 200px;
         border-radius: 10px;
-        margin-bottom: 5px;
         opacity: 50%;
+        margin-top: 20px;
       }
       img:hover {
         opacity: 100%;
@@ -374,10 +375,24 @@ section {
         button:hover {
           background-color: $clr-med;
         }
+        .info-bubble {
+          padding: 20px;
+          background-color: #08415c;
+          border-radius: 12px;
+          font-size: 1.5em;
+          max-width: 250px;
+          text-align: center;
+          z-index: 99999;
+          width: 225px;
+          flex-wrap: wrap;
+          padding: 2px;
+          .fa-brands {
+            padding: 4px;
+          }
+        }
       }
     }
   }
-
 }
 
 .contact-form {
