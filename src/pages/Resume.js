@@ -34,6 +34,9 @@ function Resume() {
       <div className="resume">
       <style>{resumeStyles}</style>
       <h2>Resume</h2>
+      <object data="../assets/SLachelier_resume.pdf" type="application/pdf" width="100%" height="50px"> 
+          <a href="../assets/SLachelier_resume.pdf">Click here to download the PDF file.</a>
+      </object>
       </div>
       <Document file={SLResume} className="pdf">
         <Page pageNumber={1} />
