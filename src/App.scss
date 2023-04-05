@@ -156,6 +156,7 @@ header {
 }
 
 #nav-links {
+  padding-right: 0;
   list-style: none;
 }
 
@@ -297,6 +298,8 @@ section {
   height: fit-content;
   border-radius: 30px;
   h1 {
+    font-size: xx-large;
+    font-weight: 500;
     position: absolute;
     color: snow;
   }
@@ -485,6 +488,7 @@ section {
     text-align: center;
   }
   a {
+    margin-left: 15%;
     color:#08415c;
   }
 }
